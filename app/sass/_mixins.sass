@@ -1,0 +1,14 @@
+=tablet
+	@media screen and (min-width: 600px)
+		@content
+
+=desctop
+	@media screen and (min-width: 900px)
+		@content
+
+%clearfix
+	&::after
+		content: ''
+		display: table
+		width: 100%
+		clear: both

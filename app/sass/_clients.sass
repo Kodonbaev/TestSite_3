@@ -1,0 +1,62 @@
+.clients
+	background: #fafafa
+	text-align: center
+	margin-top: 69px
+	padding-top: 30px
+	&__title
+		display: inline-block
+		margin: 0
+		font:
+			weight: normal
+			size: 2em
+		padding-bottom: 30px
+		span
+			font-weight: bold
+	&__text
+		margin: 0
+		color: #777
+		font-size: 0.9em
+		padding-top: 30px
+.comment
+	margin: 20px 0
+.comments
+	@extend %clearfix
+	&__pic, &__pic-2
+		width: 100%
+		img
+			border-radius: 50%
+			-webkit-box-shadow: inset 2px 0px 5px 0px rgba(255, 255, 255, 0.75)
+			-moz-box-shadow:    inset 2px 0px 5px 0px rgba(255, 255, 255, 0.75)
+			box-shadow:         inset 2px 0px 5px 0px rgba(255, 255, 255, 0.75)
+	&__text
+		background: #fff
+		border: 1px solid #f3f3f3	
+		margin: 20px
+		padding: 15px
+		border-radius: 3px
+		.comments-com
+			color: #777
+			font-size: 20px
+		a 
+			text-decoration: none
+			color: #7690c5
+	+desctop
+		&__pic
+			float: left
+			width: 26%
+		&__pic-2
+			float: right
+			width: 26%
+		&__text
+			float: left
+			width: 65%
+.company
+	margin: 50px
+	text-align: center
+	a 
+		display: block
+		width: 100%
+		padding: 10px
+		+desctop
+			display: inline
+			padding: 30px

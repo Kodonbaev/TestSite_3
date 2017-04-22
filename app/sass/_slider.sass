@@ -1,0 +1,48 @@
+.slider-box
+	position: relative
+	.slider-content
+		font-family: 
+		position: absolute
+		top: 30%
+		left: 10%
+		color: #fff
+		text-align: center
+		&__main-text
+			display: inline-block
+			width: 100%
+			margin: 0
+			font:
+				size: 1.2em
+				weight: 300
+		&__main-title
+			display: inline-block
+			width: 100%
+			margin: 20px
+			text-transform: uppercase
+			font:
+				size: 2em
+				weight: bold
+		.slider__btn
+			display: inline-block
+			padding: 10px 20px
+			width: 120px
+			text-decoration: none
+			color: #fff 
+			font-size: 20px
+			border: 2px solid #fff
+			border-radius: 4px
+		+tablet
+			&__main-text
+			&__main-title
+			.slider__btn
+		+desctop
+			position: absolute
+			top: 35%
+			left: 2%
+			&__main-text
+				font-size: 2em
+			&__main-title
+				font-size: 4em
+				margin: 20px 20px 64px
+			.slider__btn
+				padding: 17px 59px

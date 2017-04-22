@@ -1,21 +1,166 @@
-extends layout
-mixin products_block(products_array)
-  .products
-    each item in products_array
-      .product
-        a(href="#").product__img
-        if item.tags
-          - var classes = "product__label ";
-          each tag in item.tags
-            - classes += "product__label--" + tag;
-          span(class= classes)
-          img(src=`uploads/${item.image}.jpg`, width="210", height="202", alt="Product image")
-        h4.product__name= item.title
-        span.product__price= '$' + item.price
-        a(href="#").btn get it
-block content
-  +products_block(products)
-  h2 Popular product now
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700", rel="stylesheet")
+    link(rel="stylesheet", href="css/reset.css")
+    link(rel="stylesheet", href="css/font-awesome.css")
+    link(rel="stylesheet", href="css/slick.css")
+    link(rel="stylesheet", href="css/slick-theme.css")
+    link(rel="stylesheet", href="css/style.css")
 
-  +products_block(popular_products)
-
+    title= title
+  body
+    .container
+      header.header
+        h2.logo
+          a(href="#") 
+            img(src="uploads/logo.png", width="140", height="31", alt="logo")
+        
+        .menu
+          .menu__icon
+            i(aria-hidden="true").fa.fa-bars
+          nav.menu__nav
+            a(href="#") Home
+            a(href="#") Services
+            a(href="#") Clients
+            a(href="#") Team
+            a(href="#") Contact
+    .slider
+      .slider-box
+        img(src="uploads/bg-slick.jpg", width="1400", height="619")
+        .slider-content
+          h2.slider-content__main-text Can you build the website of my dreams?
+          h1.slider-content__main-title Yup, we can do that.
+          a(href="#").slider__btn Learn More
+      .slider-box
+        img(src="uploads/bg-slick.jpg", width="1400", height="619")
+        .slider-content
+          h2.slider-content__main-text Can you build the website of my dreams?
+          h1.slider-content__main-title Yup, we can do that.
+          a(href="#").slider__btn Learn More
+      .slider-box
+        img(src="uploads/bg-slick.jpg", width="1400", height="619")
+        .slider-content
+          h2.slider-content__main-text Can you build the website of my dreams?
+          h1.slider-content__main-title Yup, we can do that.
+          a(href="#").slider__btn Learn More
+    .container
+      .services
+        .service
+          .service__icon
+            i(class="fa fa-male", aria-hidden="true")
+          .service__content
+            h3.service__title Branding & Identity
+            p.servie__text Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+        .service
+          .service__icon
+            i(class="fa fa-desktop", aria-hidden="true")
+          .service__content
+            h3.service__title Web & Graphic Design
+            p.servie__text Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+        .service
+          .service__icon
+            i(class="fa fa-tablet", aria-hidden="true")
+          .service__content
+            h3.service__title Mobile App Development
+            p.servie__text Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+        .service
+          .service__icon
+            i(class="fa fa-video-camera", aria-hidden="true")
+          .service__content
+            h3.service__title Animations
+            p.servie__text Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+        .service
+          .service__icon
+            i(class="fa fa-star", aria-hidden="true")
+          .service__content
+            h3.service__title UI/UX
+            p.servie__text Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+        .service
+          .service__icon
+            i(class="fa fa-camera", aria-hidden="true")
+          .service__content
+            h3.service__title Photography
+            p.servie__text Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+    .clients
+      .container
+        h2.clients__title Awesome 
+          span Clients
+        p.clients__text See what nice things our clients said about us.
+        .comment 
+          .comments
+            .comments__pic
+              img(src="../uploads/clients-img-1.jpg", width="226", height="226", alt="Clients")
+            .comments__text
+              p.comments-com “ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus. ” 
+              a(href="#") - Jamie Richardson, Founder of Cocoa Media
+        .comment 
+          .comments 
+            .comments__pic-2
+              img(src="../uploads/clients-img-2.jpg", width="226", height="226", , alt="Clients")
+            .comments__text
+              p.comments-com “ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus. ” 
+              a(href="#") - Bart Thompson, Founder of Rainel
+    .container
+      .company
+        a(href="#")
+          img(src="uploads/evanto-icon.png", width="155", height="32", alt="Evanto")
+        a(href="#")
+          img(src="uploads/word-icon.png", width="193", height="49", alt="WordPress")
+        a(href="#")
+          img(src="uploads/tuts-icon.png", width="132", height="40", alt="Tuts")
+        a(href="#")
+          img(src="uploads/micro-icon.png", width="165", height="42", alt="microlancer")
+    .team
+      .container
+        h2.team-title Amazing 
+          span Team
+        p.team-text These wonderful people make work enjoyable.
+        .comand
+          .comand__pic
+            img(src="uploads/team-img-Kim.jpg", width="225", height="215", alt="Kim")
+          span.comand__name Kimberly Thompson
+          span.comand__special Marketer
+          .comand__link
+            a(href="#")
+              i(class="fa fa-twitter", aria-hidden="true")
+            a(href="#")
+              i(class="fa fa-facebook", aria-hidden="true")
+            a(href="#")
+              i(class="fa fa-pinterest-p", aria-hidden="true")
+        .comand
+          .comand__pic
+            img(src="uploads/team-img-Rico.jpg", width="258", height="227", alt="Rico")
+          span.comand__name Kimberly Thompson
+          span.comand__special Marketer
+          .comand__link
+            a(href="#")
+              i(class="fa fa-twitter", aria-hidden="true")
+            a(href="#")
+              i(class="fa fa-facebook", aria-hidden="true")
+            a(href="#")
+              i(class="fa fa-google-plus", aria-hidden="true")
+        .comand
+          .comand__pic
+            img(src="uploads/team-img-Uku.jpg", width="264", height="228", alt="Uku")
+          span.comand__name Kimberly Thompson
+          span.comand__special Marketer
+          .comand__link
+            a(href="#")
+              i(class="fa fa-facebook", aria-hidden="true")
+            a(href="#")
+              i(class="fa fa-pinterest-p", aria-hidden="true")
+    .contact
+      .container
+        .info
+          h2.info__title Say
+            span Hello
+          span.info__text Don’t be shy, drop us an email and say hello! We are a really nice bunch of people :)
+          .info__content
+            i(class="fa fa-camera", aria-hidden="true")
+            span (416) 555-0000
+    script(src="vendor/jquery/jquery-3.1.1.min.js")
+    script(src="vendor/slick/slick.js")
+    script(src="js/main.js")

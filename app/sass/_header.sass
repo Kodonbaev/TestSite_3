@@ -1,0 +1,80 @@
+
+
+.header
+	position: absolute
+	width: 100%
+	top: 0
+	z-index: 100
+	margin: 44px 0
+	@extend %clearfix
+	.logo
+		float: left 
+		width: 35%
+		margin: 0 28px
+		a 	
+			img
+				width: 100%
+	.menu
+		float: left
+		width: 50%
+		@extend %clearfix
+		&__icon
+			display: block
+			float: right
+			box-sizing: border-box
+			border: 1px solid #9f9898
+			width: 44px
+			height: 39px
+			margin: 5px
+			border-radius: 3px
+			&:hover
+				background: #1e5799
+			.fa-bars
+				font-size: 31px
+				color: #fff 
+				padding: 3px 8px
+
+		&__nav
+			position: absolute
+			top: 44px
+			right: 10px
+			display: none
+			text-align: center
+			width: 93%
+			border: 1px solid #d9d9d9
+			border-radius: 3px
+			z-index: 10
+			a 	
+				width: 93%
+				display: inline-block
+				border-bottom: 1px solid #d9d9d9
+				padding: 13px 0
+				text:
+					decoration: none
+				color: #fff
+	+tablet
+		.logo
+			width: 24%
+		.menu
+			width: 65%
+			&__icon
+				display: none
+			&__nav
+				width: 100%
+				position: static
+				display: block
+				border: none
+				text-align: right
+				padding-top: 6px
+				a 
+					display: inline
+					border: none
+					padding: 10px
+	+desctop
+		.logo
+			width: 15%
+		.menu
+			width: 79%
+.menu__icon:hover + .menu__nav,
+.menu__nav:hover
+	display: block

@@ -1,0 +1,31 @@
+.services
+	margin-top: 89px
+	@extend %clearfix
+.service
+	width: 100%
+	margin: 20px 0
+	
+	&__icon
+		float: left
+		width: 70px
+		height: 70px
+		background: #222
+		text-align: center
+		border-radius: 50%
+		margin: 0 18px 10px 67px
+		.fa 
+			font-size: 35px
+			color: #fff
+			padding: 17px
+	&__content
+		float: left
+		width: 64%
+	+tablet
+		width: 100%
+	+desctop
+		width: 50%
+		float: left
+.service__title
+	margin: 0 0 9px
+.servie__text
+	margin: 0 0 0 3px

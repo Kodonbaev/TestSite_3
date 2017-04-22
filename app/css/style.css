@@ -1,4 +1,410 @@
 body {
-  background: yellow;
   font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 944px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header::after, .header .menu::after, .services::after, .comments::after, .team::after, .contact::after {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  margin: 44px 0;
+}
+
+.header .logo {
+  float: left;
+  width: 35%;
+  margin: 0 28px;
+}
+
+.header .logo a img {
+  width: 100%;
+}
+
+.header .menu {
+  float: left;
+  width: 50%;
+}
+
+.header .menu__icon {
+  display: block;
+  float: right;
+  box-sizing: border-box;
+  border: 1px solid #9f9898;
+  width: 44px;
+  height: 39px;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.header .menu__icon:hover {
+  background: #1e5799;
+}
+
+.header .menu__icon .fa-bars {
+  font-size: 31px;
+  color: #fff;
+  padding: 3px 8px;
+}
+
+.header .menu__nav {
+  position: absolute;
+  top: 44px;
+  right: 10px;
+  display: none;
+  text-align: center;
+  width: 93%;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  z-index: 10;
+}
+
+.header .menu__nav a {
+  width: 93%;
+  display: inline-block;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 13px 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (min-width: 600px) {
+  .header .logo {
+    width: 24%;
+  }
+  .header .menu {
+    width: 65%;
+  }
+  .header .menu__icon {
+    display: none;
+  }
+  .header .menu__nav {
+    width: 100%;
+    position: static;
+    display: block;
+    border: none;
+    text-align: right;
+    padding-top: 6px;
+  }
+  .header .menu__nav a {
+    display: inline;
+    border: none;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .header .logo {
+    width: 15%;
+  }
+  .header .menu {
+    width: 79%;
+  }
+}
+
+.menu__icon:hover + .menu__nav,
+.menu__nav:hover {
+  display: block;
+}
+
+.slider-box {
+  position: relative;
+}
+
+.slider-box .slider-content {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: #fff;
+  text-align: center;
+}
+
+.slider-box .slider-content__main-text {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.slider-box .slider-content__main-title {
+  display: inline-block;
+  width: 100%;
+  margin: 20px;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.slider-box .slider-content .slider__btn {
+  display: inline-block;
+  padding: 10px 20px;
+  width: 120px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 900px) {
+  .slider-box .slider-content {
+    position: absolute;
+    top: 35%;
+    left: 2%;
+  }
+  .slider-box .slider-content__main-text {
+    font-size: 2em;
+  }
+  .slider-box .slider-content__main-title {
+    font-size: 4em;
+    margin: 20px 20px 64px;
+  }
+  .slider-box .slider-content .slider__btn {
+    padding: 17px 59px;
+  }
+}
+
+.services {
+  margin-top: 89px;
+}
+
+.service {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.service__icon {
+  float: left;
+  width: 70px;
+  height: 70px;
+  background: #222;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 18px 10px 67px;
+}
+
+.service__icon .fa {
+  font-size: 35px;
+  color: #fff;
+  padding: 17px;
+}
+
+.service__content {
+  float: left;
+  width: 64%;
+}
+
+@media screen and (min-width: 600px) {
+  .service {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .service {
+    width: 50%;
+    float: left;
+  }
+}
+
+.service__title {
+  margin: 0 0 9px;
+}
+
+.servie__text {
+  margin: 0 0 0 3px;
+}
+
+.clients {
+  background: #fafafa;
+  text-align: center;
+  margin-top: 69px;
+  padding-top: 30px;
+}
+
+.clients__title {
+  display: inline-block;
+  margin: 0;
+  font-weight: normal;
+  font-size: 2em;
+  padding-bottom: 30px;
+}
+
+.clients__title span {
+  font-weight: bold;
+}
+
+.clients__text {
+  margin: 0;
+  color: #777;
+  font-size: 0.9em;
+  padding-top: 30px;
+}
+
+.comment {
+  margin: 20px 0;
+}
+
+.comments__pic, .comments__pic-2 {
+  width: 100%;
+}
+
+.comments__pic img, .comments__pic-2 img {
+  border-radius: 50%;
+  box-shadow: inset 2px 0px 5px 0px rgba(255, 255, 255, 0.75);
+}
+
+.comments__text {
+  background: #fff;
+  border: 1px solid #f3f3f3;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.comments__text .comments-com {
+  color: #777;
+  font-size: 20px;
+}
+
+.comments__text a {
+  text-decoration: none;
+  color: #7690c5;
+}
+
+@media screen and (min-width: 900px) {
+  .comments__pic {
+    float: left;
+    width: 26%;
+  }
+  .comments__pic-2 {
+    float: right;
+    width: 26%;
+  }
+  .comments__text {
+    float: left;
+    width: 65%;
+  }
+}
+
+.company {
+  margin: 50px;
+  text-align: center;
+}
+
+.company a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .company a {
+    display: inline;
+    padding: 30px;
+  }
+}
+
+.team {
+  background: #111;
+  text-align: center;
+  margin-top: 69px;
+  padding-top: 30px;
+}
+
+.team-title {
+  color: #fff;
+  margin-botton: 30px;
+  display: inline-block;
+  margin: 0;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.team-title span {
+  font-weight: bold;
+}
+
+.team-text {
+  margin: 0;
+  color: #777;
+  font-size: 0.9em;
+  padding-top: 30px;
+}
+
+.comand {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin: 40px 0;
+}
+
+.comand__pic {
+  width: 100%;
+}
+
+.comand__pic img {
+  display: inline;
+  border-radius: 50%;
+  border: 7px solid #fff;
+}
+
+.comand__name {
+  display: block;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-top: 35px;
+}
+
+.comand__special {
+  display: block;
+  font-size: 0.9em;
+  margin-bottom: 35px;
+}
+
+.comand__link a {
+  display: inline-block;
+  width: 15px;
+  height: 16px;
+  box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, 0.75);
+  font-size: 0.9em;
+  border-radius: 50%;
+  color: #fff;
+  padding: 15px;
+  margin: 0 10px;
+}
+
+.comand__link a .fa {
+  font-size: 19px;
+}
+
+@media screen and (min-width: 900px) {
+  .comand {
+    width: 28%;
+    float: left;
+    margin: 40px 20px;
+  }
+}
+
+.contact {
+  background: #7690c5;
+}
+
+.info {
+  width: 50%;
 }

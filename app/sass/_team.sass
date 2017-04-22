@@ -1,0 +1,62 @@
+.team
+	background: #111
+	text-align: center
+	margin-top: 69px
+	padding-top: 30px
+	@extend %clearfix
+.team-title
+	color: #fff 
+	margin-botton: 30px
+	display: inline-block
+	margin: 0
+	font:
+		weight: normal
+		size: 2em
+	span
+			font-weight: bold
+.team-text
+	margin: 0
+	color: #777
+	font-size: 0.9em
+	padding-top: 30px
+.comand
+	width: 100%
+	text-align: center
+	color: #fff
+	margin: 40px 0
+	&__pic
+		width: 100%
+		img
+			display: inline
+			border-radius: 50%
+			border: 7px solid #fff
+	&__name
+		display: block
+		font:
+			size: 0.9em
+			weight: bold
+		margin-top: 35px
+	&__special
+		display: block
+		font-size: 0.9em
+		margin-bottom: 35px
+	&__link
+		a 	
+			display: inline-block
+			width: 15px
+			height: 16px
+			-webkit-box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, 0.75)
+			-moz-box-shadow:    inset 0px 0px 0px 3px rgba(255, 255, 255, 0.75)
+			box-shadow:         inset 0px 0px 0px 3px rgba(255, 255, 255, 0.75)
+			font-size: 0.9em
+			border-radius: 50%
+			color: #fff
+			padding: 15px
+			margin: 0 10px
+			.fa 
+				font-size: 19px
+	+desctop
+		width: 28%
+		float: left
+		margin: 40px 20px
+
