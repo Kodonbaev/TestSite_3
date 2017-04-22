@@ -1,0 +1,21 @@
+extends layout
+mixin products_block(products_array)
+  .products
+    each item in products_array
+      .product
+        a(href="#").product__img
+        if item.tags
+          - var classes = "product__label ";
+          each tag in item.tags
+            - classes += "product__label--" + tag;
+          span(class= classes)
+          img(src=`uploads/${item.image}.jpg`, width="210", height="202", alt="Product image")
+        h4.product__name= item.title
+        span.product__price= '$' + item.price
+        a(href="#").btn get it
+block content
+  +products_block(products)
+  h2 Popular product now
+
+  +products_block(popular_products)
+

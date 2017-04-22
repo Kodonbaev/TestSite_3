@@ -1,0 +1,91 @@
+{
+	"title": "Hello world",
+	"products": [
+		{
+			"title": "Kids Moon Colorblock Footed Tights",
+			"image": "saikal",
+			"price": "8.99",
+			"tags": []
+		},
+		{
+			"title": "Serax Fibrepots",
+			"image": "Aktilek",
+			"price": "8.99",
+			"tags": []
+
+		},
+		{
+			"title": "Kids Moon Colorblock Footed Tights",
+			"image": "ahmed",
+			"price": "8.99",
+			"tags": []
+		},
+		{
+			"title": "Kids Moon Colorblock Footed Tights",
+			"image": "kanat",
+			"price": "8.99",
+			"tags": []
+		},
+		{
+			"title": "Kids Moon Colorblock Footed Tights",
+			"image": "ramazan",
+			"price": "8.99",
+			"tags": []
+		},
+		{
+			"title": "Kids Moon Colorblock Footed Tights",
+			"image": "medet",
+			"price": "8.99",
+			"tags": []
+		},
+		{
+			"title": "Kids Moon Colorblock Footed Tights",
+			"image": "farid",
+			"price": "8.99",
+			"tags": []
+		}
+	],
+	"popular_products": [
+		{
+			"title": "Kids Moon Colorblock Footed Tights",
+			"image": "elza",
+			"price": "8.99",
+			"tags": ["exlusive"]
+		},
+		{
+			"title": "Kids Moon Colorblock Footed Tights",
+			"image": "aisuluu",
+			"price": "8.99",
+			"tags": []
+		},
+		{
+			"title": "Kids Moon Colorblock Footed Tights",
+			"image": "andrei",
+			"price": "8.99",
+			"tags": ["hot"]
+		},
+		{
+			"title": "Kids Moon Colorblock Footed Tights",
+			"image": "Oleg",
+			"price": "8.99",
+			"tags": []
+		},
+		{
+			"title": "Serax Fibrepots",
+			"image": "Alexandra",
+			"price": "8.99",
+			"tags": ["exclusive"]
+		}
+	],
+	"menu_items": [
+	    "Man",
+	    "Women",
+	    "Fashion 2013",
+	    "Kids",
+	    "Jeans",
+	    "Tshirt",
+	    "Top Fasion",
+	    "Summber collection",
+	    "Special Offer"
+ 	]
+}

@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900", rel="stylesheet")
+    link(rel="stylesheet", href="css/reset.css")
+    link(rel="stylesheet", href="css/style.css")
+    title= title
+  body
+    .container
+      .header
+        .logo
+          h2.logo__text
+            a(href="#") fashion
+              span press
+    .main-menu
+      .container
+        .menu__text
+          a(href="#") home
+          a(href="#") about us
+          a(href="#") carees
+          a(href="#") contact us
+          a(href="#") company profile
+          a(href="#") company regictration
+          a(href="#") wish list
+    .container
+      .main
+        .sidebar
+          block sidebar
+            nav.menu
+            each item in menu_items
+              a(href="", class="menu_item")= item
+        main.content
+          block content
+    
