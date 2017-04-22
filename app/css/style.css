@@ -480,5 +480,12 @@ body {
 }
 
 .footer {
-  border-bottom: 1px solid #fff;
+  margin-top: 40px;
+  border-top: 1px solid #fff;
+  text-align: center;
+}
+
+.footer span {
+  font-size: 14px;
+  color: #fff;
 }
