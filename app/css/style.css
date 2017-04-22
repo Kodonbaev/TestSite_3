@@ -403,8 +403,82 @@ body {
 
 .contact {
   background: #7690c5;
+  padding: 65px 0;
 }
 
 .info {
-  width: 50%;
+  width: 100%;
+  color: #fff;
+}
+
+.info__title {
+  display: block;
+  margin: 0;
+  font-weight: normal;
+  font-size: 2em;
+  padding-bottom: 30px;
+}
+
+.info__title span {
+  font-weight: bold;
+}
+
+.info__text {
+  margin: 0;
+  font-size: 0.9em;
+  padding-top: 30px;
+}
+
+.info__content i {
+  padding: 10px;
+  font-size: 25px;
+}
+
+.info__content span {
+  padding: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .info {
+    float: left;
+    width: 45%;
+    margin-left: 50px;
+  }
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-form input {
+  width: 90%;
+  padding: 20px;
+  border: none;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.contact-form textarea {
+  width: 90%;
+  padding: 20px;
+  border: none;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .contact-form {
+    width: 48%;
+    float: left;
+  }
+  .contact-form input {
+    width: 100%;
+  }
+  .contact-form textarea {
+    width: 100%;
+  }
+}
+
+.footer {
+  border-bottom: 1px solid #fff;
 }

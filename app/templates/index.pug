@@ -159,8 +159,30 @@ html(lang="en")
             span Hello
           span.info__text Don’t be shy, drop us an email and say hello! We are a really nice bunch of people :)
           .info__content
-            i(class="fa fa-camera", aria-hidden="true")
+            i(class="fa fa-mobile", aria-hidden="true")
             span (416) 555-0000
+          .info__content
+            i(class="fa fa-envelope", aria-hidden="true")
+            span hello@escape.com
+          .info__content
+            i(class="fa fa-twitter", aria-hidden="true")
+            span @escape
+          .info__content
+            i(class="fa fa-facebook", aria-hidden="true")
+            span facebook.com/escape
+          .info__content
+            i(class="fa fa-mobile", aria-hidden="true")
+            span plus.com/escape
+          .info__content
+            i(class="fa fa-pinterest-p", aria-hidden="true")
+            span pinterest.com/escape
+        .contact-form
+          form
+            input(type="text", placeholder="Your Name", required) 
+            input(type="email", placeholder="Your E-mail", required)
+            textarea(name="", cols="30", rows="10", placeholder="Your E-mail") 
+
     script(src="vendor/jquery/jquery-3.1.1.min.js")
     script(src="vendor/slick/slick.js")
+    script(src="../vendor/validate/jquery.validate.min.js")
     script(src="js/main.js")
