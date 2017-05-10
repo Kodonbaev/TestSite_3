@@ -1,10 +1,17 @@
+
+$('#registration-form').validate({
+    rules: {
+        userPassword :{
+            minlength: 6,
+        }
+    }
+});
 $('.slider').slick({
     dots: true,
     responsive: [
         {
-            breakpoint: 500,
-            settings: {
-                slidesToShow: 3,
+                settings: {
+                slidesToShow: 1,
                 slidesToScroll: 1
             }
         },

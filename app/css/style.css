@@ -10,7 +10,7 @@ body {
   position: relative;
 }
 
-.header::after, .header .menu::after, .services::after, .comments::after, .team::after, .contact::after {
+.container::after, .header::after, .header .menu::after, .services::after, .comments::after, .team::after, .contact::after, .info::after {
   content: '';
   display: table;
   width: 100%;
@@ -125,6 +125,10 @@ body {
   position: relative;
 }
 
+.slider-box img {
+  width: 100%;
+}
+
 .slider-box .slider-content {
   position: absolute;
   top: 30%;
@@ -207,11 +211,13 @@ body {
 .service__content {
   float: left;
   width: 64%;
+  margin: 20px 0;
 }
 
 @media screen and (min-width: 600px) {
   .service {
-    width: 100%;
+    width: 50%;
+    float: left;
   }
 }
 

@@ -92,14 +92,14 @@ html(lang="en")
         .comment 
           .comments
             .comments__pic
-              img(src="../uploads/clients-img-1.jpg", width="226", height="226", alt="Clients")
+              img(src="uploads/clients-img-1.jpg", width="226", height="226", alt="Clients")
             .comments__text
               p.comments-com “ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus. ” 
               a(href="#") - Jamie Richardson, Founder of Cocoa Media
         .comment 
           .comments 
             .comments__pic-2
-              img(src="../uploads/clients-img-2.jpg", width="226", height="226", , alt="Clients")
+              img(src="uploads/clients-img-2.jpg", width="226", height="226", , alt="Clients")
             .comments__text
               p.comments-com “ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus. ” 
               a(href="#") - Bart Thompson, Founder of Rainel
@@ -152,8 +152,8 @@ html(lang="en")
               i(class="fa fa-facebook", aria-hidden="true")
             a(href="#")
               i(class="fa fa-pinterest-p", aria-hidden="true")
-    .contact
-      .container
+    .contact.clearfix
+      .container.clearfix
         .info
           h2.info__title Say
             span Hello
@@ -177,14 +177,14 @@ html(lang="en")
             i(class="fa fa-pinterest-p", aria-hidden="true")
             span pinterest.com/escape
         .contact-form
-          form
+          form#registration-form
             input(type="text", placeholder="Your Name", required) 
             input(type="email", placeholder="Your E-mail", required)
             textarea(name="", cols="30", rows="10", placeholder="Your E-mail") 
-        footer.footer
-          span © 2014 Escape by FreebiesXpress • Made In Toronto
+      footer.footer
+        span © 2014 Escape by FreebiesXpress • Made In Toronto
 
     script(src="vendor/jquery/jquery-3.1.1.min.js")
     script(src="vendor/slick/slick.js")
-    script(src="../vendor/validate/jquery.validate.min.js")
+    script(src="vendor/validate/jquery.validate.min.js")
     script(src="js/main.js")
